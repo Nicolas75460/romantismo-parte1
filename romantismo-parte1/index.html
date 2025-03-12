@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantismo(Parte 1)</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Romantismo</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#contexto">Contexto Histórico</a></li>
+                <li><a href="#contexto-historico">Contexto Histórico</a></li>
                 <li><a href="#caracteristicas">Características</a></li>
                 <li><a href="#tipos">Tipos</a></li>
                 <li><a href="#autores">Autores e Obras</a></li>
@@ -21,76 +22,167 @@
     </header>
 
     <main>
-        <section class="titulo">
+        <section id="titulo">
             <h1>Romantismo:</h1>
             <h1>Parte 1</h1>
         </section>
 
-        <section id="origem" class="bloco">
-            <h2 class="origem">ORIGEM</h2>
-            <div class="revfranind">
-                <div class="revtexto">
-                    <h2>Influências da Revolução Francesa e Industrial</h2><br>
-                    <p>A Revolução Francesa e a Revolução Industrial influenciaram o Romantismo de diversas formas, como na estética, nos temas e na liberdade artística.</p><br>
+        <section id="contexto-historico">
+            <div class="texto">
+                <h3 class="titulo">Contexto Histórico</h3>
+                <img id="imagem-troca" src="img/revolucao-francesa.webp" alt="">
+                <p>O movimento teve início na Europa, principalmente na Alemanha, França e Inglaterra, como uma forma de expressar emoções, individualidade e imaginação, em oposição à frieza e objetividade da razão iluminista.
 
-                    <h3>Revolução Francesa</h3>
-                    <p>A Revolução Francesa (1789-1799) foi o marco histórico do Romantismo. A ascensão da burguesia e a decadência da aristocracia refletiram-se na estética romântica. A Revolução Francesa contribuiu para o surgimento do nacionalismo, que foi um tema muito debatido no Romantismo. Além disso, inspirou a criação de novas instituições e formas de organizar a vida social, política e econômica.</p><br>
+                    Principais Fatores Históricos: 
+                </p>
+                <ul>
+                    <li>Revolução Francesa (1789) → Trouxe a valorização da liberdade e do individualismo.</li>
+                    <li>Revolução Industrial → Impactou a sociedade, trazendo um sentimento de nostalgia e valorização da natureza.</li>
+                    <li>Nacionalismo → Fortaleceu a ideia de identidade cultural e histórica de cada nação.</li>
+                    <li>Rejeição ao Iluminismo → Em vez da razão, os românticos exaltavam o sentimento, a intuição e o mistério.</li>
+                </ul>
+            </div>
+        </section>
 
-                    <h3>Revolução Industrial</h3>
-                    <p>O Romantismo está relacionado com as novas relações de trabalho e a urbanização que surgiram com a Revolução Industrial. Os artistas românticos foram inspirados pelas questões públicas e envolveram-se nelas. A fuga do real para o imaginário foi um dos sintomas românticos, refletindo um mundo em constante transformação.</p><br>
+        <section id="caracteristicas">
+            <div class="texto">
+                <h3 class="titulo">Características</h3>
+                <div class="caracteristicas-container">
+                    <div class="caracteristicas-cards">
+                        <h4>Nacionalismo e Indianismo</h4>
+                        <img src="./img/caracteristica-naturalista-indianista.png" alt="">
+                    </div>
+                    <div class="caracteristicas-cards">
+                        <h4>Exaltação da Natureza</h4>
+                        <img src="./img/caracteristica-natureza.png" alt="">
+                    </div>
+                    <div class="caracteristicas-cards">
+                        <h4>Idealização do Amor e da Mulher</h4>
+                        <img src="./img/caracteristica-exaltacao-mulher.png" alt="">
+                    </div>
+                    <div class="caracteristicas-cards">
+                        <h4>Egocentrismo e Sentimentalismo</h4>
+                        <img src="./img/caracteristica-egocentrismo-sentimentalismo.png" alt="">
+                    </div>
+                    <div class="caracteristicas-cards">
+                        <h4>Religiosidade e Escapismo</h4>
+                        <img src="./img/caracteristica-religiosidade.png" alt="">
+                    </div>
+                </div>
+        </section>
 
-                    <h3>Liberdade Temática</h3>
-                    <p>A liberdade temática dos artistas românticos permitiu que eles percorressem diversos assuntos em suas obras. Os poetas românticos começaram a escrever obras para e sobre o trabalhador, trazendo temas sociais e emocionais para o centro da literatura.</p>
+        <h3 class="titulo-fora">Os 4 tipos do Romantismo</h3>
+
+        <section id="tipos">
+            <div class="tipos-container">
+                <div class="expandir1" onclick="expand1()">
+                    <img src="./img/caracteristica-naturalista-indianista.png" alt="Imagem" class="image">
+                    <div class="text-box">
+                        <h4>Naturalista e Indianista:</h4>
+                        <p>Exaltação do Brasil e do índio como herói nacional. O indígena era retratado de forma
+                            idealizada, como um ser puro e nobre. Exemplo: Iracema, de José de Alencar.</p>
+                    </div>
+                </div>
+                <div class="expandir2" onclick="expand2()">
+                    <img src="./img/historico.webp" alt="Imagem" class="image">
+                    <div class="text-box">
+                        <h4>Historico:</h4>
+                        <p>Valorização do passado nacional e suas tradições. Muitos autores misturavam ficção com fatos
+                            históricos para criar uma identidade cultural única. Exemplo: O Guarani, de José de Alencar.
+                        </p>
+                    </div>
+                </div>
+                <div class="expandir3" onclick="expand3()">
+                    <img src="./img/urbano.jpg" alt="Imagem" class="image">
+                    <div class="text-box">
+                        <h4>Urbano:</h4>
+                        <p>O romance urbano é uma narrativa longa cujo principal espaço de ação dos personagens é a
+                            cidade, em oposição ao campo.</p>
+                    </div>
+                </div>
+                <div class="expandir4" onclick="expand4()">
+                    <img src="./img/regionalista.png" alt="Imagem" class="image">
+                    <div class="text-box">
+                        <h4>Regionalista:</h4>
+                        <p>Foco no sertão e nas paisagens do Brasil, valorizando costumes e dialetos regionais. Exemplo:
+                            O Gaúcho, de José de Alencar.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="caracteristicas" class="bloco">
-            <div class="texto">
-                <h2>Características</h2>
-                <ul>
-                    <li>Nacionalismo e Indianismo</li>
-                    <li>Exaltação da Natureza</li>
-                    <li>Idealização do Amor e da Mulher</li>
-                    <li>Egocentrismo e Sentimentalismo</li>
-                    <li>Religiosidade e Escapismo</li>
-                </ul>
-            </div>
-            <img src="img/caracteristicas.jpg" alt="Imagem ilustrativa das características">
-        </section>
-
-        <section id="tipos" class="bloco">
-            <div class="texto">
-                <h2>Os 4 Tipos do Romantismo</h2>
-                <ol>
-                    <li><b>Nacionalista / Indianista</b> – Exaltação do Brasil e do índio como herói nacional.</li>
-                    <li><b>Histórico</b> – Valorização do passado nacional e suas tradições.</li>
-                    <li><b>Urbano</b> – Narrativas que ocorrem nas cidades.</li>
-                    <li><b>Regionalista</b> – Foco no sertão e paisagens do Brasil.</li>
-                </ol>
-            </div>
-            <img src="img/tipos.png" alt="Imagem ilustrativa dos tipos de romantismo">
-        </section>
+        <h2 class="titulo-fora">Autores</h2>
 
         <section id="autores" class="bloco">
             <div class="texto">
-                <h2>Autores e Obras</h2>
-                <ul>
-                    <li><b>Gonçalves de Magalhães</b> – "Suspiros Poéticos e Saudades"</li>
-                    <li><b>Antônio Gonçalves Dias</b> – "Canção do Exílio"</li>
-                    <li><b>Manuel José de Araújo</b> – "A Moreninha"</li>
-                </ul>
-            </div>
-            <img src="img/autores.png" alt="Imagem de escritores do romantismo">
+                <div class="gallery">
+                    <div class="image-container" onclick="expandImage('desc1')">
+                        <img src="./img/jose-alencar.jpg" alt="Imagem 1">
+                        <div class="description" id="desc1">José de Alencar é considerado um dos maiores expoentes do
+                            romantismo no Brasil. Na primeira geração romântica, com teor nacionalista e indianista,
+                            Alencar exaltou diversos aspectos nacionais e a figura do índio como herói brasileiro.</div>
+                    </div>
+                    <div class="image-container" onclick="expandImage('desc2')">
+                        <img src="./img/goncalves-dias.jpg" alt="Imagem 2">
+                        <div class="description" id="desc2">Gonçalves Dias foi um dos maiores poetas da primeira geração
+                            romântica do Brasil. Lembrado como poeta indianista, ele escreveu sobre temas relacionados à
+                            figura do índio. Além de poeta, ele foi jornalista, advogado e etnólogo.</div>
+                    </div>
+                    <div class="image-container" onclick="expandImage('desc3')">
+                        <img src="./img/gonçalves_magalhães.jpg" alt="Imagem 3">
+                        <div class="description" id="desc3">Gonçalves de Magalhães (1811-1882) foi um escritor
+                            brasileiro pertencente à primeira geração romântica, fase marcada pelo binômio
+                            nacionalismo-indianismo.
+                            Ele foi considerado um dos precursores do romantismo no Brasil.</div>
+                    </div>
+                </div>
         </section>
 
-        <section id="folhetim" class="bloco">
+        <h2 class="titulo-fora">Obras</h2>
+
+        <section id="obras" class="bloco">
             <div class="texto">
-                <h2>Folhetim</h2>
-                <p>Os folhetins eram histórias publicadas em capítulos nos jornais, muito populares entre os leitores da época. Eles ajudaram a difundir a literatura romântica, tornando-a acessível ao público. Muitos romances famosos começaram como folhetins, incluindo várias obras de José de Alencar.</p>
+                <div class="gallery">
+                    <div class="image-container" onclick="expandImage('desc4')">
+                        <img src="/img/guarani.jpg" alt="Imagem 4">
+                        <div class="description" id="desc4">"O Guarani" (1857), de José de Alencar, é um romance
+                            indianista do Romantismo brasileiro.
+                            Conta a história de Peri, um índio corajoso, e Ceci, uma jovem portuguesa. Peri protege Ceci
+                            de perigos, incluindo o traidor Loredano e um ataque indígena. No final, ele renuncia à sua
+                            cultura para ficar com ela, simbolizando a união do indígena com o europeu.</div>
+                    </div>
+                    <div class="image-container" onclick="expandImage('desc5')">
+                        <img src="/img/cancao_do_exilio.jpg" alt="Imagem 5">
+                        <div class="description" id="desc5" .>"Canção do Exílio" é um poema escrito por Gonçalves Dias
+                            em 1843, durante seu exílio em Portugal. É um dos mais famosos do Romantismo brasileiro.
+                            O eu lírico expressa saudade do Brasil, exaltando suas belezas naturais, como palmeiras,
+                            sabiás e rios. Ele compara a pátria idealizada com o lugar onde está exilado, demonstrando
+                            forte sentimento nacionalista.</div>
+                    </div>
+                    <div class="image-container" onclick="expandImage('desc6')">
+                        <img src="img/suspiros_poeticos_saudades.jpg" alt="Imagem 6">
+                        <div class="description" id="desc6">"Suspiros Poéticos e Saudades" (1836) foi o primeiro livro
+                            de Gonçalves de Magalhães e marcou o início do Romantismo no Brasil.
+                            A obra reúne poemas que exploram temas como saudade, religiosidade, nacionalismo e natureza.
+                            Magalhães expressa sentimentos profundos, influenciados pelo Romantismo europeu, mas
+                            adaptados à realidade brasileira.</div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <section id="folhetim" class="bloco">
+            <div class="folhetim">
+                <div class="texto">
+                    <h3 class="titulo">Folhetim</h3>
+                    <img src="./img/folhetim.jpg" alt="">
+                    <p>Os folhetins eram histórias publicadas em capítulos nos jornais, muito populares entre os leitores da época. Eles ajudaram a difundir a literatura romântica, tornando-a acessível ao público. Muitos romances famosos começaram como folhetins, incluindo várias obras de José de Alencar.</p>
+                </div>
             </div>
-            <img src="img/folhetim.jpg" alt="Imagem representando os folhetins">
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
